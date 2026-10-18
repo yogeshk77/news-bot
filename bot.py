@@ -40,7 +40,7 @@ def main():
     else:
         body = "No new updates on this topic since the last check."
     msg = EmailMessage()
-    msg["Subject"] = f"[News] {TOPIC}: {len(new)} new"
+    msg["Subject"] = "[Claude] - CJP Updates"
     msg["From"] = msg["To"] = TO
     msg.set_content(body)
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
