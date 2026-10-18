@@ -4,7 +4,7 @@ from email.message import EmailMessage
 from pathlib import Path
 
 TOPIC = "CJP protest Election Commissioner"
-TO = "me.yogesh77@gmail.com"
+TO = os.environ["GMAIL_ADDRESS"]
 STATE = Path(__file__).with_name("seen.json")
 
 
